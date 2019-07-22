@@ -1,0 +1,11 @@
+package FallSleep;
+
+import javax.management.relation.Role;
+
+public class RoleTest {
+	private static Role role1;
+
+	public static void main(String[] args) {
+		role1 = new Role(null, null);
+	}
+}

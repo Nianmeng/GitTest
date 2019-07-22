@@ -1,0 +1,15 @@
+package Java2;
+/**
+ * 将给定的钱数分成 较小货币单位
+ * @author 念梦
+ * @data 2019年4月13日 下午2:34:27
+ *
+ */
+import java.util.Scanner;
+public class RMB {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		
+	}
+
+}

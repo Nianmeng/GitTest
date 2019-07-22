@@ -1,0 +1,22 @@
+package Java2;
+
+import java.util.Scanner;
+
+/**
+ * 根据角色的内力值打印角色的能力描述
+ * @author 念梦
+ * @data 2019年4月13日 下午3:42:39
+ *
+ */
+public class ShoppingDemmo {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入角色的内力值：");
+		int power = input.nextInt();
+		if(power >= 0 && power < 1000){
+			System.out.println("他看起来不堪一击");
+		}else if(!(power < 1000 || power > 3000)){
+			System.out.println("看起来毫不足虑");
+		}
+	}
+}

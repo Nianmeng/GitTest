@@ -1,0 +1,10 @@
+package Java5;
+
+public class MoneyTotal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

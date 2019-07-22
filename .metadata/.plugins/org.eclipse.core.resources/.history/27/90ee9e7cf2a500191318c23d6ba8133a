@@ -1,0 +1,15 @@
+package pers.xuetang9.line.chapter3;
+
+/**
+ * 使用if实现判断是否可以搬动桌子
+ * @author 念梦
+ * @data 2019年7月14日 下午12:36:00
+ *
+ */
+public class MoveDask {
+	public static void main(String[] args) {
+		int age;	//用户的年龄
+		char sex;	//用户的性别
+		
+	}
+}

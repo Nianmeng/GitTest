@@ -1,0 +1,29 @@
+package Java2;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author 念梦
+ * @data 2019年4月13日 下午11:32:01
+ *
+ */
+public class PasswordDemo {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		String password = null;//密码
+		String userName = "";
+		int  i = 0;
+		while(i < 3){
+			System.out.println("请输入密码：");
+			password = input.next();
+			i++;
+			if(!"123456".equals(password)){
+				if(i == 3){
+					System.out.println("密码输入错误已达三次，强制退出系统！");
+					System.exit(0);
+				}
+			}
+		}
+	}
+}

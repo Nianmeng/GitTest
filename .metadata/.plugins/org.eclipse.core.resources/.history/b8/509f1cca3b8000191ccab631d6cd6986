@@ -1,0 +1,46 @@
+package FallSleep;
+
+import java.util.Scanner;
+
+/**
+ * TODO
+ * @author 念梦
+ * @data 2019年5月25日 上午1:48:21
+ *
+ */
+public class wuerwu {
+	public static void main(String[] args) {
+		final int N = 10;
+		double sum = 0;
+		double avg = 0;
+		double[] grands = new double[N];
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入十个分数：");
+		for (int i = 0; i < N; i++) {
+			grands[i] = input.nextDouble();
+		}
+		for (int i = 0; i < grands.length - 1; i++) {
+			for (int j = 0; j < grands.length - i - 1; j++) {
+				if(grands[j] > grands[j + 1]){
+					double temp = grands[j];
+					grands[j] = grands[j + 1];
+					grands[j + 1] = temp;
+				}
+			}
+		}
+		System.out.println("您输入的十个分数由小到大排列为：");
+		for (int i = 0; i < grands.length; i++) {
+			System.out.printf("%.1f\t", grands[i]);
+		}
+		for (int i = 0; i < grands.length - 1; i++) {
+			grands[i] = grands[i + 1];
+		}
+		System.out.printf("\n去除一个最大值和一个最小值后的数为：\n");
+		for (int i = 0; i < grands.length - 2; i++) {
+			System.out.printf("%.1f\t", grands[i]);
+			sum += grands[i];
+		}
+		avg = sum / 10.0;
+		System.out.println("十个分数的平均值为：" + avg);
+	}
+}
